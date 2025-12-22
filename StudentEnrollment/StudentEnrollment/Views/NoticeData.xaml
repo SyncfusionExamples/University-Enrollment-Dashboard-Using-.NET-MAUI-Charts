@@ -10,10 +10,10 @@
             Background="#F7D4FC"
             StrokeShape="RoundRectangle 8">
 
-        <Grid VerticalOptions="Fill" 
+        <Grid VerticalOptions="{OnPlatform Default=Fill, MacCatalyst=Center}" 
               RowDefinitions="auto,*" 
-              RowSpacing="14"
-              Padding="20">
+              RowSpacing="{OnPlatform Default=14, MacCatalyst=18}"
+              Padding="{OnPlatform Default=20, MacCatalyst=20 0 20 20}">
 
             <Image Source="graduate.png" 
                    HorizontalOptions="Start"
@@ -22,7 +22,7 @@
                    HeightRequest="60"/>
 
             <VerticalStackLayout Grid.Row="1" 
-                                 Spacing="10">
+                                 Spacing="{OnPlatform Default=10, MacCatalyst=14}">
 
                 <Label Text="{Binding SelectedDegree.Name, StringFormat='Degree: {0}'}"
                        FontAttributes="Bold"
