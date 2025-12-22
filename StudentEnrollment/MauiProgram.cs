@@ -15,6 +15,8 @@ namespace StudentEnrollment
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Jost-Regular.ttf", "JostRegular");
+                    fonts.AddFont("JosefinSans-Regular.ttf", "JosefinSansRegular");
                 });
 
             // TODO: Register your Syncfusion license here (placeholder)

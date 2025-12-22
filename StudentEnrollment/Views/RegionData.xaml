@@ -22,8 +22,12 @@
             </sfCharts:SfCartesianChart.Title>
             
             <sfCharts:SfCartesianChart.XAxes>
-                <sfCharts:CategoryAxis ShowMajorGridLines="False" 
-                                       LabelPlacement="BetweenTicks"/>
+                <sfCharts:CategoryAxis ShowMajorGridLines="False"
+                                       LabelPlacement="BetweenTicks">
+                    <sfCharts:CategoryAxis.LabelStyle>
+                        <sfCharts:ChartAxisLabelStyle FontFamily ="JostRegular"/>
+                    </sfCharts:CategoryAxis.LabelStyle>
+                </sfCharts:CategoryAxis>
             </sfCharts:SfCartesianChart.XAxes>
 
             <sfCharts:SfCartesianChart.YAxes>
@@ -49,7 +53,8 @@
                 <sfCharts:ColumnSeries.DataLabelSettings>
                     <sfCharts:CartesianDataLabelSettings>
                         <sfCharts:CartesianDataLabelSettings.LabelStyle>
-                            <sfCharts:ChartDataLabelStyle TextColor="White"/>
+                            <sfCharts:ChartDataLabelStyle TextColor="White" 
+                                                          FontFamily ="JostRegular"/>
                         </sfCharts:CartesianDataLabelSettings.LabelStyle>
                     </sfCharts:CartesianDataLabelSettings>
                 </sfCharts:ColumnSeries.DataLabelSettings>

@@ -57,26 +57,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Remove="ViewModel\EnrollmentViewModel.Methods.cs" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Include="ViewModel\EnrollmentViewModel.Methods.cs" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Essentials" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
 		<!-- Syncfusion controls -->
-		<PackageReference Include="Syncfusion.Maui.Core" Version="*" />
 		<PackageReference Include="Syncfusion.Maui.Charts" Version="*" />
 		<PackageReference Include="Syncfusion.Maui.Gauges" Version="*" />
 		<PackageReference Include="Syncfusion.Maui.SunburstChart" Version="*" />
 		<PackageReference Include="Syncfusion.Maui.Inputs" Version="*" />
-		<PackageReference Include="Syncfusion.Maui.ListView" Version="*" />
-		<PackageReference Include="Syncfusion.Maui.Buttons" Version="*" />
-		<PackageReference Include="Syncfusion.Maui.Popup" Version="*" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -51,13 +51,15 @@
                             HorizontalOptions="Start" >
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span TextColor="#610097" Text="Zerenthia Meridian University Enrollment Dashboard," 
-                                        FontSize="{OnPlatform Default=22, Android=16, iOS=16}" 
-                                        FontFamily="Calibri"
-                                        FontAttributes="Bold"/>
-                                <Span Text=" USA" TextColor="#99610097"
-                                        FontFamily="Calibri"
-                                        FontSize="{OnPlatform Default=14, Android=12, iOS=12}"  />
+                                <Span TextColor="#610097" 
+                                      Text="Zerenthia Meridian University Enrollment Dashboard," 
+                                      FontSize="{OnPlatform Default=22, Android=16, iOS=16}" 
+                                      FontFamily ="JostRegular"
+                                      FontAttributes="Bold"/>
+                                <Span Text=" USA" 
+                                      TextColor="#99610097"
+                                      FontFamily ="JostRegular"
+                                      FontSize="{OnPlatform Default=14, Android=12, iOS=12}"  />
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
@@ -74,6 +76,8 @@
                                         Grid.Row="1"
                                         Padding="4,0"
                                         TextColor="#610097"
+                                        FontFamily ="JostRegular"
+                                        DropDownItemFontFamily="JostRegular"
                                         Background="#F7D4FC"
                                         Stroke="Transparent"
                                         DropDownBackground="{OnPlatform Default='#E6AFFF', Android='#F7D4FC', iOS='#F7D4FC'}"

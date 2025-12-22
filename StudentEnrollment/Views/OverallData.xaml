@@ -11,7 +11,7 @@
             Background="#F7D4FC" 
             StrokeShape="RoundRectangle 8">
 
-        <sfSunburst:SfSunburstChart EnableTooltip="True" 
+        <sfSunburst:SfSunburstChart EnableTooltip="True"
                                     PaletteBrushes="{Binding CustomBrushes}"
                                     ItemsSource="{Binding SunburstData}" 
                                     ValueMemberPath="StudentCount" 
@@ -26,7 +26,7 @@
             </sfSunburst:SfSunburstChart.Title>
             
             <sfSunburst:SfSunburstChart.Legend>
-                <sfSunburst:SunburstLegend IsVisible="True" 
+                <sfSunburst:SunburstLegend IsVisible="True"
                                            Placement="{OnPlatform Default=Left,Android=Bottom,iOS=Bottom }"/>
             </sfSunburst:SfSunburstChart.Legend>
 
@@ -35,7 +35,15 @@
                 <sfSunburst:SunburstHierarchicalLevel GroupMemberPath="CourseName"/>
                 <sfSunburst:SunburstHierarchicalLevel GroupMemberPath="ProgramType"/>
             </sfSunburst:SfSunburstChart.Levels>
-            
+
+            <sfSunburst:SfSunburstChart.TooltipSettings>
+                <sfSunburst:SunburstTooltipSettings   FontFamily ="JostRegular"/>
+            </sfSunburst:SfSunburstChart.TooltipSettings>
+
+            <sfSunburst:SfSunburstChart.DataLabelSettings>
+                <sfSunburst:SunburstDataLabelSettings FontFamily ="JostRegular"/>
+            </sfSunburst:SfSunburstChart.DataLabelSettings>
+
         </sfSunburst:SfSunburstChart>
     </Border>
 </ContentView>
