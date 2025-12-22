@@ -13,18 +13,26 @@ public partial class NoticeData : ContentView
     {
         if(Banner != null)
         {
-            await Banner.ScaleTo(1.0, 500, Easing.CubicOut);
             AnimateBannerLoop();
         }
     }
 
     private async void AnimateBannerLoop()
     {
+#if WINDOWS || MACCATALYST
         while (_isAnimating)
         {
-            await Banner.ScaleTo(1.05, 600, Easing.CubicInOut);
-            await Banner.ScaleTo(0.95, 600, Easing.CubicInOut);
-            await Task.Delay(200); // Optional pause between pulses
+            if (Banner != null)
+            {
+                await Banner.ScaleToAsync(1.05, 600, Easing.CubicInOut);
+                await Banner.ScaleToAsync(0.95, 600, Easing.CubicInOut);
+                await Task.Delay(200); // Optional pause between pulses
+            }
+            else
+            {
+                break; // Exit the loop if Banner is null
+            }
         }
+#endif
     }
 }

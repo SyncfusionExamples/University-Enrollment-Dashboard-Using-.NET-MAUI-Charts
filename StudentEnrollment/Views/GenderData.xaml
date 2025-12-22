@@ -14,7 +14,7 @@
             Background="#F7D4FC"
             StrokeShape="RoundRectangle 8">
 
-        <Grid Padding="0,0,20,0" 
+        <Grid Padding="{OnPlatform  Default=0 0 10 0, Android=0, iOS=0}"
               Margin="{OnPlatform Android=0 0 10 0, Default=0}">
             <sfCharts:SfCircularChart VerticalOptions="Fill"
                                       HorizontalOptions="Fill">

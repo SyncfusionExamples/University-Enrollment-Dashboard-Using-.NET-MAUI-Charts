@@ -19,36 +19,7 @@ namespace StudentEnrollment.WinUI
         {
             this.InitializeComponent();
         }
-
         protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
-
-
-        //protected override void OnLaunched(LaunchActivatedEventArgs args)
-        //{
-        //    base.OnLaunched(args);
-        //    try
-        //    {
-        //        // Get the WinUI Window and its AppWindow, then request FullScreen presenter.
-        //        var window = Microsoft.UI.Xaml.Window.Current;
-        //        if (window == null)
-        //            return;
-
-        //        var hwnd = WindowNative.GetWindowHandle(window);
-        //        var windowId = Microsoft.UI.Win32Interop.GetWindowIdFromWindow(hwnd);
-        //        var appWindow = AppWindow.GetFromWindowId(windowId);
-
-        //        if (appWindow != null)
-        //        {
-        //            // Request full screen mode
-        //            appWindow.SetPresenter(AppWindowPresenterKind.FullScreen);
-        //        }
-        //    }
-        //    catch
-        //    {
-        //        // Ignore exceptions
-        //    }
-
-        //}
 
     }
 }

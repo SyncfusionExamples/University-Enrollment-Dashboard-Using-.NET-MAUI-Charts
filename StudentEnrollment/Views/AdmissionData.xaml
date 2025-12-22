@@ -75,7 +75,7 @@
                         <sfGauge:RadialAxis.Pointers>
                             <sfGauge:RangePointer   Value="{Binding GaugeTotal}"
                                                     EnableAnimation="True"
-                                                    PointerWidth="{OnPlatform Default=24, Android=20, iOS=24}"
+                                                    PointerWidth="{OnPlatform Default=24, Android=20, iOS=20}"
                                                     PointerOffset="{OnPlatform Default=-8.5, Android=-6, iOS=-6}"
                                                     CornerStyle="BothCurve">
                                 <sfGauge:RangePointer.GradientStops>
