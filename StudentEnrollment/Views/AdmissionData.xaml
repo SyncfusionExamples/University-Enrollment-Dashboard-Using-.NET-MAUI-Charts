@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:sfCharts="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+            xmlns:sfGauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
+            xmlns:sfSunburst="clr-namespace:Syncfusion.Maui.SunburstChart;assembly=Syncfusion.Maui.SunburstChart"
+            xmlns:sfInputs="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+            xmlns:local="clr-namespace:StudentEnrollment"
+            x:Class="StudentEnrollment.AdmissionData">
+
+    <Border Padding="8,6,4,4" 
+            StrokeThickness="1" 
+            Stroke="#F7D4FC" 
+            Background="#F7D4FC"
+            StrokeShape="RoundRectangle 8">
+
+        <Grid RowDefinitions="Auto,*">
+            <Label  Text="Admission Count Details" 
+                    TextColor="#610097"
+                    FontSize="{OnPlatform Default=18, Android=14, iOS=14}"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    HorizontalTextAlignment="Start"/>
+            
+            <sfGauge:SfRadialGauge  x:Name="distanceTrackerGauge"
+                                    Background="Transparent"
+                                    Grid.Row="1">
+                <sfGauge:SfRadialGauge.Axes>
+                    <sfGauge:RadialAxis Minimum="0" 
+                                        RadiusFactor="0.8"
+                                        OffsetUnit="Factor"
+                                        Maximum="{Binding SelectedDegree.TotalSeats}"
+                                        ShowTicks="False"
+                                        ShowLabels="False"
+                                        EnableLoadingAnimation="True"
+                                        AnimationDuration="2000">
+                        
+                        <sfGauge:RadialAxis.AxisLineStyle>
+                            <sfGauge:RadialLineStyle CornerStyle="BothCurve" 
+                                                     Fill="#FEAEDB" />
+                        </sfGauge:RadialAxis.AxisLineStyle>
+                        
+                        <sfGauge:RadialAxis.Annotations>
+                            <sfGauge:GaugeAnnotation>
+                                <sfGauge:GaugeAnnotation.Content>
+                                    <VerticalStackLayout>
+                                        <Label Text="{Binding AdmittedSeatsByDegree}"
+                                               TextColor="#610097"
+                                               FontSize="16" 
+                                               HorizontalTextAlignment="Center"
+                                               FontAttributes="Bold" >
+                                        </Label>
+                                    </VerticalStackLayout>
+                                </sfGauge:GaugeAnnotation.Content>
+                            </sfGauge:GaugeAnnotation>
+
+                            <sfGauge:GaugeAnnotation  DirectionValue="120"
+                                                      PositionFactor="1"
+                                                      HorizontalAlignment="Start">
+                                <sfGauge:GaugeAnnotation.Content>
+                                    <Label Text="0"
+                                           FontSize="12"/>
+                                </sfGauge:GaugeAnnotation.Content>
+                            </sfGauge:GaugeAnnotation>
+
+                            <sfGauge:GaugeAnnotation DirectionValue="60"
+                                                     PositionFactor="1">
+                                <sfGauge:GaugeAnnotation.Content>
+                                    <Label Text="{Binding SelectedDegree.TotalSeats}"
+                                           FontSize="12"/>
+                                </sfGauge:GaugeAnnotation.Content>
+                            </sfGauge:GaugeAnnotation>
+                        </sfGauge:RadialAxis.Annotations>
+
+                        <sfGauge:RadialAxis.Pointers>
+                            <sfGauge:RangePointer   Value="{Binding GaugeTotal}"
+                                                    EnableAnimation="True"
+                                                    PointerWidth="{OnPlatform Default=24, Android=20, iOS=24}"
+                                                    PointerOffset="{OnPlatform Default=-8.5, Android=-6, iOS=-6}"
+                                                    CornerStyle="BothCurve">
+                                <sfGauge:RangePointer.GradientStops>
+                                    <sfGauge:GaugeGradientStop Value="80" Color="#33F56ABA" />
+                                    <sfGauge:GaugeGradientStop Value="180" Color="#FFF54EA2" />
+                                </sfGauge:RangePointer.GradientStops>
+                            </sfGauge:RangePointer>
+                            
+                            <sfGauge:ShapePointer   Value="{Binding GaugeShapePointer}"
+                                                    EnableAnimation="True"
+                                                    ShapeType="Circle"
+                                                    Fill="White" />
+                        </sfGauge:RadialAxis.Pointers>
+                    </sfGauge:RadialAxis>
+                </sfGauge:SfRadialGauge.Axes>
+            </sfGauge:SfRadialGauge>
+        </Grid>
+    </Border>
+</ContentView>

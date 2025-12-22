@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudentEnrollment.NoticeData">
+
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontFamily" Value="Calibri"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <Border x:Name="Banner" 
+            Scale="0.8"
+            StrokeThickness="1" 
+            Stroke="#F7D4FC" 
+            Background="#F7D4FC"
+            StrokeShape="RoundRectangle 8">
+
+        <Grid VerticalOptions="Fill" 
+              RowDefinitions="auto,*" 
+              RowSpacing="14"
+              Padding="20">
+
+            <Image Source="graduate.png" 
+                   HorizontalOptions="Start"
+                   VerticalOptions="Start"
+                   WidthRequest="60" 
+                   HeightRequest="60"/>
+
+            <VerticalStackLayout Grid.Row="1" 
+                                 Spacing="10">
+
+                <Label Text="{Binding SelectedDegree.Name, StringFormat='Degree: {0}'}"
+                       FontAttributes="Bold"
+                       FontSize="18"
+                       TextColor="#610097"/>
+
+                <Label Text="{Binding RemainingVacancies, StringFormat='Available seats {0}'}"
+                       FontSize="16"
+                       TextColor="#1F2937"/>
+
+                <Label Text="{Binding ApplicationCloseText}"
+                       FontSize="13"
+                       TextColor="#6B7280"
+                       LineBreakMode="WordWrap"/>
+                
+            </VerticalStackLayout>
+        </Grid>
+    </Border>
+
+
+</ContentView>
