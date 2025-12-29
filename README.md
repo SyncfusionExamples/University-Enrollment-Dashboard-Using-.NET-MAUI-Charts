@@ -3,7 +3,7 @@
 A dashboard is a centralized interface that brings together multiple visualizations to provide insights at a glance. It helps users monitor key metrics, identify trends, and make informed decisions quickly. Dashboards are especially useful in scenarios like admissions, HR, or wellness tracking, where diverse data points need to be understood in context.
 
 ## Cartesian Chart
-The SfCartesianChart is used to plot data along X and Y axes, making it ideal for comparisons across categories.
+The [SfCartesianChart](https://help.syncfusion.com/maui-toolkit/cartesian-charts/getting-started) is used to plot data along X and Y axes, making it ideal for comparisons across categories.
 
 **Key Features**
 - Supports multiple series types such as column, line, and bar for flexible visualization.
@@ -13,7 +13,7 @@ The SfCartesianChart is used to plot data along X and Y axes, making it ideal fo
 - Customization options for axes, labels, legends, and series styling.
 
 ## Circular Chart
-The SfCircularChart is designed for proportion‑based visualization, such as pie and doughnut charts.
+The [SfCircularChart](https://help.syncfusion.com/maui-toolkit/circular-charts/getting-started) is designed for proportion‑based visualization, such as pie and doughnut charts.
 
 **Key Features**
 - Supports pie and doughnut series for clear representation of parts‑to‑whole data.
@@ -23,7 +23,7 @@ The SfCircularChart is designed for proportion‑based visualization, such as pi
 - Compact design suitable for dashboards and mobile layouts.
 
 ## Sunburst Chart
-The SfSunburstChart is ideal for visualizing hierarchical data in concentric rings.
+The [SfSunburstChart](https://help.syncfusion.com/maui-toolkit/sunburstchart/getting-started) is ideal for visualizing hierarchical data in concentric rings.
 
 **Key Features**
 - Displays hierarchical relationships across multiple levels (e.g., degree → course → program type).
@@ -32,7 +32,7 @@ The SfSunburstChart is ideal for visualizing hierarchical data in concentric rin
 - Tooltips provide additional details on hover.
 - Custom palette brushes allow thematic styling.
 
-## What We Did in This Sample
+## Sample Walkthrough
 In this sample, we built a Student Enrollment Dashboard using Syncfusion .NET MAUI Toolkit Charts. The dashboard visualizes:
 
 - Admission capacity with a radial gauge.
@@ -43,9 +43,10 @@ In this sample, we built a Student Enrollment Dashboard using Syncfusion .NET MA
   
 Together, these tiles tell the complete story of enrollment health, empowering universities to make smarter and faster decisions.
 
-## Output
 ![Presentation1 (1)](https://github.com/user-attachments/assets/67a30561-fe57-423e-b28f-dca036dde24c)
 
 ## Troubleshooting
 ### Path Too Long Exception  
-If you encounter this when building, close Visual Studio and rename the repository to a shorter path, then rebuild.
+If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
+
+For a step-by-step procedure, refer to the [Student Enrollment Dashboard Blog]().
