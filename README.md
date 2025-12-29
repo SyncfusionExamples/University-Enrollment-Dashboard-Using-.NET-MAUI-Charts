@@ -3,7 +3,7 @@
 A dashboard is a centralized interface that brings together multiple visualizations to provide insights at a glance. It helps users monitor key metrics, identify trends, and make informed decisions quickly. Dashboards are especially useful in scenarios like admissions, HR, or wellness tracking, where diverse data points need to be understood in context.
 
 ## Cartesian Chart
-The [SfCartesianChart](https://help.syncfusion.com/maui-toolkit/cartesian-charts/getting-started) is used to plot data along X and Y axes, making it ideal for comparisons across categories.
+The [SfCartesianChart](https://help.syncfusion.com/maui/cartesian-charts/getting-started) is used to plot data along X and Y axes, making it ideal for comparisons across categories.
 
 **Key Features**
 - Supports multiple series types such as column, line, and bar for flexible visualization.
@@ -13,7 +13,7 @@ The [SfCartesianChart](https://help.syncfusion.com/maui-toolkit/cartesian-charts
 - Customization options for axes, labels, legends, and series styling.
 
 ## Circular Chart
-The [SfCircularChart](https://help.syncfusion.com/maui-toolkit/circular-charts/getting-started) is designed for proportion‑based visualization, such as pie and doughnut charts.
+The [SfCircularChart](https://help.syncfusion.com/maui/circular-charts/getting-started) is designed for proportion‑based visualization, such as pie and doughnut charts.
 
 **Key Features**
 - Supports pie and doughnut series for clear representation of parts‑to‑whole data.
@@ -23,7 +23,7 @@ The [SfCircularChart](https://help.syncfusion.com/maui-toolkit/circular-charts/g
 - Compact design suitable for dashboards and mobile layouts.
 
 ## Sunburst Chart
-The [SfSunburstChart](https://help.syncfusion.com/maui-toolkit/sunburstchart/getting-started) is ideal for visualizing hierarchical data in concentric rings.
+The [SfSunburstChart](https://help.syncfusion.com/maui/sunburstchart/getting-started) is ideal for visualizing hierarchical data in concentric rings.
 
 **Key Features**
 - Displays hierarchical relationships across multiple levels (e.g., degree → course → program type).
