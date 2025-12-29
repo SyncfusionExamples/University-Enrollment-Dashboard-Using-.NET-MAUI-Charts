@@ -1,84 +1,50 @@
 # Student Enrollment Dashboard Using .NET MAUI Charts
 
-This sample demonstrates a modern, responsive Student Enrollment Dashboard built with .NET MAUI Charts. It visualizes key academic metrics such as admissions, vacancies, diversity, program distribution, and regional reach, helping universities make data‑driven enrollment decisions.
+A dashboard is a centralized interface that brings together multiple visualizations to provide insights at a glance. It helps users monitor key metrics, identify trends, and make informed decisions quickly. Dashboards are especially useful in scenarios like admissions, HR, or wellness tracking, where diverse data points need to be understood in context.
 
-## Syncfusion .NET MAUI Charts
-A high‑performance charting library for .NET MAUI apps with:
-- Broad chart coverage: Radial gauge, column, doughnut, sunburst, and more.
-- Interactivity: Tooltips, data labels, selection, animations.
-- Styling: Flexible APIs for axes, legends, labels, palettes, and annotations.
-
-Getting started: [Syncfusion .NET MAUI Charts](https://help.syncfusion.com/maui/cartesian-charts/getting-started)
-
-## Student Enrollment Dashboard
-### Layout overview
-**Three‑row responsive layout:**
-- Title bar: University name with degree filter.
-- Middle row: Admission gauge, notice banner, gender distribution chart.
-- Bottom row: Program distribution (Sunburst) and Students by Country/Region chart.
-
-**Responsive behavior:**
-- Desktop: Degree filter placed beside the title; charts arranged side by side.
-- Mobile: Degree filter moves below the title; charts stack vertically for readability.
-
-## Dashboard Components
-### Admission Count Details (Radial Gauge)
-- **Chart Used: SfRadialGauge**
-- **Why we used it**: A radial gauge is ideal for showing admitted seats versus total capacity. It feels like a KPI meter, making progress instantly clear to admissions teams.
+## Cartesian Chart
+The SfCartesianChart is used to plot data along X and Y axes, making it ideal for comparisons across categories.
 
 **Key Features**
-- Axes: Circular arc axis with customizable labels, ticks, and lines.
-- Ranges: Visual ranges highlight where values fall on the scale.
-- Pointers: Multiple pointer types (needle, shape, content, range) to indicate values.
-- Pointer animation: Smooth transitions when values change.
-- Pointer interaction: Drag pointers at runtime to adjust values dynamically.
-- Annotations: Add text or images at points of interest for clarity.
+- Supports multiple series types such as column, line, and bar for flexible visualization.
+- Interactive zooming and panning for exploring large datasets in detail.
+- Data binding support to map values directly from collections.
+- Ability to render multiple series simultaneously for comparison.
+- Customization options for axes, labels, legends, and series styling.
 
-### Gender Distribution (Semi‑Doughnut Chart)
-- **Chart Used: SfCircularChart → DoughnutSeries**
-- **Why we used it**: Diversity is a critical enrollment metric. A semi‑doughnut chart reduces visual weight while clearly showing proportions across Female, Male, and Other categories.
+## Circular Chart
+The SfCircularChart is designed for proportion‑based visualization, such as pie and doughnut charts.
 
 **Key Features**
-- Chart types: Supports pie and doughnut series for flexible visualization.
-- User interaction: Tooltips, selection, and explode effects enhance exploration.
-- Legends: Provide additional context about categories and values.
-- Dynamic update: Reflects live data changes instantly when switching degrees.
+- Supports pie and doughnut series for clear representation of parts‑to‑whole data.
+- User interactions like tooltips, selection, and explode effects enhance readability.
+- Legends provide additional context about categories and values.
+- Dynamic updates reflect live data changes instantly.
+- Compact design suitable for dashboards and mobile layouts.
 
-### Program Distribution (Sunburst Chart)
-- **Chart Used: SfSunburstChart**
-- **Why we used it**: Universities need to see the bigger picture of enrollment across degrees, courses, and program types. A sunburst chart turns hierarchical data into an interactive circular view.
-
-**Key Features**
-- Data visualization: Represents hierarchical data across multiple levels.
-- Data labels: Improve readability of segments.
-- Legend: Helps identify categories at a glance.
-- Tooltip: Displays additional details on hover.
-- Customization: Palette brushes allow thematic styling.
-- Center view: Elevation option to display extra information in the middle.
-
-### Students by Country/Region (Column Chart)
-- **Chart Used: SfCartesianChart → ColumnSeries**
-- **Why we used it:** To highlight global diversity, a column chart makes it easy to compare enrollment counts across countries. The height of each column reflects student numbers, making differences instantly visible.
+## Sunburst Chart
+The SfSunburstChart is ideal for visualizing hierarchical data in concentric rings.
 
 **Key Features**
-- Series variety: Supports multiple series types for flexible visualization.
-- Data binding: Maps data directly from specified paths.
-- Interactive zooming: Explore portions of large datasets in detail.
-- Multiple series rendering: Compare and visualize different datasets simultaneously.
-- Customization: Options for axes, labels, legends, and series styling.
+- Displays hierarchical relationships across multiple levels (e.g., degree → course → program type).
+- Data labels improve readability of segments.
+- Legends help identify categories quickly.
+- Tooltips provide additional details on hover.
+- Custom palette brushes allow thematic styling.
 
-### MVVM and Data Binding
-Pattern: MVVM with observable collections for charts and tiles.
-ViewModel drives:
-- Degree filter (SelectedDegree)
-- Admission metrics (TotalSeats, AdmittedSeats)
-- Vacancy and deadline data
-- Gender statistics (Category/Count)
-- Program distribution (Degree → Course → ProgramType)
-- Country statistics (Country/Count)
+## What We Did in This Sample
+In this sample, we built a Student Enrollment Dashboard using Syncfusion .NET MAUI Toolkit Charts. The dashboard visualizes:
+
+- Admission capacity with a radial gauge.
+- Urgency and deadlines with a notice banner.
+- Diversity with a semi‑doughnut chart.
+- Program distribution with a sunburst chart.
+- Global reach with a column chart.
+  
+Together, these tiles tell the complete story of enrollment health, empowering universities to make smarter and faster decisions.
 
 ## Output
-<img width="975" height="484" alt="image" src="https://github.com/user-attachments/assets/75a6ccac-8337-4c87-abc1-6e93bbd16f8f" />
+![Presentation1 (1)](https://github.com/user-attachments/assets/67a30561-fe57-423e-b28f-dca036dde24c)
 
 ## Troubleshooting
 ### Path Too Long Exception  
