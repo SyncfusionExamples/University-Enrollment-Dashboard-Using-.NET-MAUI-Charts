@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfSunburst="clr-namespace:Syncfusion.Maui.SunburstChart;assembly=Syncfusion.Maui.SunburstChart"
+             xmlns:local="clr-namespace:StudentEnrollment"
+             x:Class="StudentEnrollment.OverallData">
+
+    <Border Padding="8,6,4,4"
+            StrokeThickness="1" 
+            Stroke="#F7D4FC" 
+            Background="#F7D4FC" 
+            StrokeShape="RoundRectangle 8">
+
+        <sfSunburst:SfSunburstChart EnableTooltip="True"
+                                    PaletteBrushes="{Binding CustomBrushes}"
+                                    ItemsSource="{Binding SunburstData}" 
+                                    ValueMemberPath="StudentCount" 
+                                    ShowLabels="True">
+            
+            <sfSunburst:SfSunburstChart.Title>
+                <Label Text="All Programs Overview" 
+                       TextColor="#610097" 
+                       FontSize="{OnPlatform Default=18, Android=14, iOS=14}"
+                       FontAttributes="Bold" 
+                       HorizontalTextAlignment="Start"/>
+            </sfSunburst:SfSunburstChart.Title>
+            
+            <sfSunburst:SfSunburstChart.Legend>
+                <sfSunburst:SunburstLegend IsVisible="True"
+                                           Placement="{OnPlatform Default=Left,Android=Bottom,iOS=Bottom }"/>
+            </sfSunburst:SfSunburstChart.Legend>
+
+            <sfSunburst:SfSunburstChart.Levels>
+                <sfSunburst:SunburstHierarchicalLevel GroupMemberPath="DegreeName"/>
+                <sfSunburst:SunburstHierarchicalLevel GroupMemberPath="CourseName"/>
+                <sfSunburst:SunburstHierarchicalLevel GroupMemberPath="ProgramType"/>
+            </sfSunburst:SfSunburstChart.Levels>
+
+            <sfSunburst:SfSunburstChart.TooltipSettings>
+                <sfSunburst:SunburstTooltipSettings   FontFamily ="JostRegular"/>
+            </sfSunburst:SfSunburstChart.TooltipSettings>
+
+            <sfSunburst:SfSunburstChart.DataLabelSettings>
+                <sfSunburst:SunburstDataLabelSettings FontFamily ="JostRegular"/>
+            </sfSunburst:SfSunburstChart.DataLabelSettings>
+
+        </sfSunburst:SfSunburstChart>
+    </Border>
+</ContentView>

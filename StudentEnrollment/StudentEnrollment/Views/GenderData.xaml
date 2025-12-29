@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:sfCharts="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+              xmlns:sfGauge="clr-namespace:Syncfusion.Maui.Gauges;assembly=Syncfusion.Maui.Gauges"
+              xmlns:sfSunburst="clr-namespace:Syncfusion.Maui.SunburstChart;assembly=Syncfusion.Maui.SunburstChart"
+              xmlns:sfInputs="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+              xmlns:local="clr-namespace:StudentEnrollment"
+             x:Class="StudentEnrollment.GenderData">
+
+    <Border Padding="8,6,0,0"
+            StrokeThickness="1" 
+            Stroke="#F7D4FC" 
+            Background="#F7D4FC"
+            StrokeShape="RoundRectangle 8">
+
+        <Grid Padding="{OnPlatform  Default=0 0 10 0, Android=0, iOS=0}"
+              Margin="{OnPlatform Android=0 0 10 0, Default=0}">
+            <sfCharts:SfCircularChart VerticalOptions="Fill"
+                                      HorizontalOptions="Fill">
+                
+                <sfCharts:SfCircularChart.Resources>
+                    <DataTemplate x:Key="legendTemplate">
+                        <StackLayout Orientation="Horizontal"
+                                     WidthRequest="{OnIdiom Desktop=148, Default=-1}"
+                                     Spacing="{OnPlatform Default=10, Android=4,iOS=4}" 
+                                     Padding="6">
+                            <RoundRectangle Background="{Binding IconBrush}" 
+                                            HeightRequest="12" 
+                                            WidthRequest="12"
+                                            CornerRadius="6"/>
+                            <Label Text="{Binding Item.Category}" 
+                                   FontSize="{OnPlatform Default=14, Android=12, iOS=12}"/>
+                            <Label Text="-" 
+                                   FontSize="{OnPlatform Default=14, Android=12, iOS=12}"/>
+                            <Label Text="{Binding Item.Count}" 
+                                   FontSize="{OnPlatform Default=14, Android=12, iOS=12}" 
+                                   FontAttributes="Bold"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </sfCharts:SfCircularChart.Resources>
+
+                <sfCharts:SfCircularChart.Title>
+                    <Label Text="Gender Distribution" 
+                           FontAttributes="Bold" 
+                           TextColor="#610097"
+                           FontSize="{OnPlatform Default=18, Android=14, iOS=14}"
+                           Padding="4"
+                           HorizontalOptions="Fill"
+                           HorizontalTextAlignment="Start"/>
+                </sfCharts:SfCircularChart.Title>
+
+                <sfCharts:DoughnutSeries  ItemsSource="{Binding GenderStats}" 
+                                          StartAngle="180"
+                                          EndAngle="360"
+                                          Radius="1"
+                                          InnerRadius="0.7"
+                                          EnableAnimation="True"
+                                          XBindingPath="Category"
+                                          YBindingPath="Count"
+                                          ShowDataLabels="False" 
+                                          EnableTooltip="False"
+                                          PaletteBrushes="{Binding CustomBrushes}"/>
+
+
+                <sfCharts:SfCircularChart.Legend>
+                    <sfCharts:ChartLegend ItemTemplate="{StaticResource legendTemplate}" 
+                                          Placement="{OnPlatform Default=Right, Android=Bottom, iOS=Bottom}" 
+                                          IsVisible="True" 
+                                          OffsetX="0"
+                                          IsFloating="False"/>
+                </sfCharts:SfCircularChart.Legend>
+            </sfCharts:SfCircularChart>
+        </Grid>
+    </Border>
+</ContentView>
