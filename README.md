@@ -8,7 +8,7 @@ A high‑performance charting library for .NET MAUI apps with:
 - Interactivity: Tooltips, data labels, selection, animations.
 - Styling: Flexible APIs for axes, legends, labels, palettes, and annotations.
 
-Getting started: https://help.syncfusion.com/maui/cartesian-charts/getting-started
+Getting started: [Syncfusion .NET MAUI Charts](https://help.syncfusion.com/maui/cartesian-charts/getting-started)
 
 ## Student Enrollment Dashboard
 ### Layout overview
