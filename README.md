@@ -1,4 +1,4 @@
-# Student Enrollment Dashboard Using .NET MAUI Toolkit Charts
+# Student Enrollment Dashboard Using .NET MAUI Charts
 
 This sample demonstrates a modern, responsive Student Enrollment Dashboard built with .NET MAUI and Syncfusion® .NET MAUI Toolkit Charts. It visualizes key academic metrics such as admissions, vacancies, diversity, program distribution, and regional reach, helping universities make data‑driven enrollment decisions.
 
