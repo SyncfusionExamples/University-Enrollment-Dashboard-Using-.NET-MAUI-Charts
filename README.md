@@ -78,6 +78,7 @@ ViewModel drives:
 - Country statistics (Country/Count)
 
 ## Output
+<img width="975" height="484" alt="image" src="https://github.com/user-attachments/assets/75a6ccac-8337-4c87-abc1-6e93bbd16f8f" />
 
 ## Troubleshooting
 ### Path Too Long Exception  
