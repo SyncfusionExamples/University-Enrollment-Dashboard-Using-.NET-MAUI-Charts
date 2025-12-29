@@ -23,8 +23,8 @@ Getting started: https://help.syncfusion.com/maui/cartesian-charts/getting-start
 
 ## Dashboard Components
 ### Admission Count Details (Radial Gauge)
-Chart Used:** SfRadialGauge**
-Why we used it: A radial gauge is ideal for showing admitted seats versus total capacity. It feels like a KPI meter, making progress instantly clear to admissions teams.
+- **Chart Used: SfRadialGauge**
+- **Why we used it**: A radial gauge is ideal for showing admitted seats versus total capacity. It feels like a KPI meter, making progress instantly clear to admissions teams.
 
 **Key Features**
 - Axes: Circular arc axis with customizable labels, ticks, and lines.
@@ -35,8 +35,8 @@ Why we used it: A radial gauge is ideal for showing admitted seats versus total 
 - Annotations: Add text or images at points of interest for clarity.
 
 ### Gender Distribution (Semi‑Doughnut Chart)
-**Chart Used: SfCircularChart → DoughnutSeries**
-Why we used it: Diversity is a critical enrollment metric. A semi‑doughnut chart reduces visual weight while clearly showing proportions across Female, Male, and Other categories.
+- **Chart Used: SfCircularChart → DoughnutSeries**
+- **Why we used it**: Diversity is a critical enrollment metric. A semi‑doughnut chart reduces visual weight while clearly showing proportions across Female, Male, and Other categories.
 
 **Key Features**
 - Chart types: Supports pie and doughnut series for flexible visualization.
@@ -45,8 +45,8 @@ Why we used it: Diversity is a critical enrollment metric. A semi‑doughnut cha
 - Dynamic update: Reflects live data changes instantly when switching degrees.
 
 ### Program Distribution (Sunburst Chart)
-**Chart Used: SfSunburstChart**
-Why we used it: Universities need to see the bigger picture of enrollment across degrees, courses, and program types. A sunburst chart turns hierarchical data into an interactive circular view.
+- **Chart Used: SfSunburstChart**
+- **Why we used it**: Universities need to see the bigger picture of enrollment across degrees, courses, and program types. A sunburst chart turns hierarchical data into an interactive circular view.
 
 **Key Features**
 - Data visualization: Represents hierarchical data across multiple levels.
@@ -57,8 +57,8 @@ Why we used it: Universities need to see the bigger picture of enrollment across
 - Center view: Elevation option to display extra information in the middle.
 
 ### Students by Country/Region (Column Chart)
-**Chart Used: SfCartesianChart → ColumnSeries**
-Why we used it: To highlight global diversity, a column chart makes it easy to compare enrollment counts across countries. The height of each column reflects student numbers, making differences instantly visible.
+- **Chart Used: SfCartesianChart → ColumnSeries**
+- **Why we used it:** To highlight global diversity, a column chart makes it easy to compare enrollment counts across countries. The height of each column reflects student numbers, making differences instantly visible.
 
 **Key Features**
 - Series variety: Supports multiple series types for flexible visualization.
