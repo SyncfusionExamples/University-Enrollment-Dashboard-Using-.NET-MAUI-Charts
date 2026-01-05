@@ -49,4 +49,4 @@ Together, these tiles tell the complete story of enrollment health, empowering u
 ### Path Too Long Exception  
 If you are facing a path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
 
-For a step-by-step procedure, refer to the [Student Enrollment Dashboard Blog]().
+For a step-by-step procedure, refer to the [Student Enrollment Dashboard Blog](https://www.syncfusion.com/blogs/post/dotnet-maui-student-enrollment-dashboard).
